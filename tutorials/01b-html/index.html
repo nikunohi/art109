@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+
+<body>
+    <h1>These Images Stack on Top of Each Other</h1>
+    <section>
+        <div>
+            <img src="images/box.png" width="1000" alt="Dockworker watching a crane unload a container off of a ship.">
+        </div>
+        <div>
+            <img src="images/box.png" width="1000" alt="Dockworker watching a crane unload a container off of a ship.">
+        </div>
+    </section>
+    <section>
+        <h2>This Image is Responsive</h2>
+        <img src="images/nikunohi-fallback.jpg" width="800"
+            alt="Dockworker watching a crane unload a container off of a ship." srcset="images/nikunohi-640.jpg 640w,
+            images/nikunohi-1280.jpg 1280w,
+            images/nikunohi-1920.jpg 1920w">
+    </section>
+    <section>
+        <h2>This Image Crops Responsively</h2>
+        <picture>
+            <source media="(width < 800px)" srcset="images/nikunohi-480.jpg" />
+            <source media="(width >= 800px)" srcset="images/nikunohi-800.jpg" />
+            <img src="images/nikunohi-800.jpg" alt="Dockworker watching a crane unload a container off of a ship" />
+        </picture>
+    </section>
+</body>
+
+</html>
