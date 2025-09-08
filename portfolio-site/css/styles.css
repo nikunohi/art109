@@ -1,0 +1,68 @@
+/* 
+Color Palette
+*/
+
+/* Global Stlyes
+---------------------------------------*/
+
+
+body {
+    background: #EDE8D0;
+}
+
+/* links */
+a {
+    color: green;
+}
+a:hover{
+    color: grey;
+    text-decoration: none;
+}
+footer a {
+    color: grey;
+}
+footer a:hover {
+    color: green;
+}
+.btn {
+    background: green;
+    color: #EDE8D0;
+    text-decoration: none;
+}
+
+
+/* Home
+---------------------------------------*/
+.home{
+    background: url(../images/bg-sunset-ocean.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+/* Resume
+---------------------------------------*/
+.home .content-wrapper{
+    background-color: rgb(255 255 255 / .9);
+}
+
+/* Profile
+---------------------------------------*/
+
+/* Projects
+---------------------------------------*/
+
+/* Work Experience
+---------------------------------------*/
+
+/* Education
+---------------------------------------*/
+
+
+
+
+/* Footer
+---------------------------------------*/
+footer {
+    background: #222;
+    color: #d3d4d6
+}
