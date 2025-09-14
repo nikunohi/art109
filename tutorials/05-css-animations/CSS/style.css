@@ -1,0 +1,176 @@
+body {
+    animation: change-color 6s 1;
+    background-color: aquamarine;
+}
+
+@keyframes change-color {
+    0% {
+        background-color: orange;
+    }
+
+
+    100% {
+        background-color: aquamarine;
+    }
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 80px auto;
+    animation: skew 2s infinite alternate;
+}
+
+@keyframes skew {
+    0% {
+        transform: skew(0deg, 0deg);
+    }
+
+    100% {
+        transform: skew(15deg, 20deg);
+    }
+}
+
+.square {
+    background-color: orangered;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 50px auto;
+    transition: all 1s;
+}
+
+.newspaper {
+    background-color: grey;
+    width: 200px;
+    height: 320px;
+    border-radius: 20px;
+    margin: 50px auto;
+    animation: spinning-entrance 3s 1;
+    transform: rotate(3050deg);
+}
+
+@keyframes spinning-entrance {
+    0% {
+        transform: rotate(0deg) scale(0%);
+    }
+
+    80% {
+        transform: rotate(3000deg) scale(125%);
+    }
+
+    100% {
+        transform: rotate(3050deg) scale(100%);
+    }
+}
+
+
+.square:hover {
+    background-color: aqua;
+    transform: rotate(30deg);
+}
+
+.button-div {
+    text-align: center;
+}
+
+.button {
+    color: white;
+    padding: 15px;
+    background-color: green;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 50px auto;
+    display: inline-block;
+    transition: all .5s;
+
+
+}
+
+.button:hover {
+    background-color: purple;
+    color: black;
+    transform: scale(1.5);
+
+}
+
+.button-2 {
+    color: white;
+    padding: 15px;
+    background-color: skyblue;
+    margin: 50px auto;
+    display: inline-block;
+    animation: bounce 1s 1;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(0%);
+        background-color: blue;
+    }
+
+    80% {
+        transform: scale(120%);
+        background-color: white;
+    }
+
+    100% {
+        transform: scale(100%);
+        background-color: skyblue;
+    }
+}
+
+.button-3 {
+    color: white;
+    padding: 15px;
+    background-color: orange;
+    margin: 50px auto;
+    display: inline-block;
+     transition: transform ease .5s;
+}
+
+
+.button-3:hover{
+    background-color: purple;
+    color: green;
+    transform: scale(120%);
+}
+
+.button-3:focus {
+    background-color: white;
+    color: black;
+    transform: rotate(45deg) scale(120%);
+    
+}
+
+.loading {
+    background-color: blue;
+    animation: stretch 5s;
+    width: 80vw;
+}
+
+.loading2 {
+    background-color: aquamarine;
+    animation: stretch2 7s;
+    width: 80vw;
+}
+
+@keyframes stretch {
+    0% {
+        width: 100px;
+    }
+
+    100% {
+        width: 80vw;
+    }
+}
+
+@keyframes stretch2 {
+    0% {
+        width: 100px;
+    }
+
+    100% {
+        width: 80vw;
+    }
+}
