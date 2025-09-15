@@ -120,27 +120,120 @@ body {
     }
 }
 
-.button-3 {
+.button-3-1 {
     color: white;
     padding: 15px;
     background-color: orange;
     margin: 50px auto;
     display: inline-block;
-     transition: transform ease .5s;
+    transition: transform ease .5s;
 }
 
 
-.button-3:hover{
+.button-3-1:hover {
+    background-color: purple;
+    color: green;
+    transform: scale(120%);
+
+}
+
+.button-3-1:focus {
+    background-color: white;
+    color: black;
+    transform: scale(120%);
+    opacity: 0;
+}
+
+.button-3-2 {
+    color: white;
+    padding: 15px;
+    background-color: orange;
+    margin: 50px auto;
+    display: inline-block;
+    transition: transform ease .5s;
+}
+
+
+.button-3-2:hover {
     background-color: purple;
     color: green;
     transform: scale(120%);
 }
 
-.button-3:focus {
+.button-3-2:focus {
     background-color: white;
     color: black;
-    transform: rotate(45deg) scale(120%);
-    
+    transform: scale(120%);
+    opacity: 0;
+}
+
+.button-3-3 {
+    color: white;
+    padding: 15px;
+    background-color: orange;
+    margin: 50px auto;
+    display: inline-block;
+    transition: transform ease .5s;
+}
+
+
+.button-3-3:hover {
+    background-color: purple;
+    color: green;
+    transform: scale(120%);
+}
+
+.button-3-3:focus {
+    background-color: white;
+    color: black;
+    transform: scale(120%);
+    opacity: 0;
+}
+
+.button-4 {
+    color: rgb(0, 26, 255);
+    padding: 15px;
+    background-color: rgb(255, 212, 253);
+    margin: 50px auto;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 50px;
+
+}
+
+.button-4:hover {
+    background-color: purple;
+    color: green;
+    animation: spin 1s cubic-bezier(0, .56, .46, 1) 1;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.button-5 {
+    border-radius: 3px;
+    color: fuchsia;
+    padding: 15px;
+    background-color: olive;
+    margin: 50px auto;
+    display: inline-block;
+
+    transition: transform 1s;
+    transition-timing-function: cubic-bezier(0, .56, .46, 1);
+
+}
+
+.button-5:hover {
+    background-color: purple;
+    color: tan;
+    transform: rotate(360deg) scale(220%);
 }
 
 .loading {
