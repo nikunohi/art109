@@ -4,10 +4,18 @@ Color Palette
 
 /* Global Stlyes
 ---------------------------------------*/
-
-
+html{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
 body {
     background: #EDE8D0;
+    margin: 0;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 /* links */
@@ -29,7 +37,11 @@ footer a:hover {
     color: #EDE8D0;
     text-decoration: none;
 }
-
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+}
 
 /* Home
 ---------------------------------------*/
@@ -43,6 +55,17 @@ footer a:hover {
 ---------------------------------------*/
 .home .content-wrapper{
     background-color: rgb(255 255 255 / .9);
+}
+
+/* .resume header {
+    background: url(../images/nikunohi-scribble-stickers-1-1920-rs.jpg)
+} */
+.resume header::before {
+    background: url(../images/nikunohi-scribble-stickers-2-1920-rs.jpg) center;
+    background-size: cover;
+    content:"";
+    display: block;
+    height: 400px;
 }
 
 /* Profile
@@ -65,4 +88,17 @@ footer a:hover {
 footer {
     background: #222;
     color: #d3d4d6
+}
+
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+
+.socials li {
+    display: inline-block;
+}
+
+.socials img {
+    width: 32px;
 }
