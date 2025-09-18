@@ -14,6 +14,16 @@ body {
     }
 }
 
+
+h2{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+p{
+    margin: 5px;
+    text-align: left;
+}
 .title {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -45,9 +55,9 @@ body {
     width: 200px;
     height: 320px;
     border-radius: 20px;
-    margin: 50px auto;
+    margin: 10px auto;
     animation: spinning-entrance 3s 1;
-    transform: rotate(3050deg);
+    transform: rotate(2870deg);
 }
 
 @keyframes spinning-entrance {
@@ -56,11 +66,11 @@ body {
     }
 
     80% {
-        transform: rotate(3000deg) scale(125%);
+        transform: rotate(2820deg) scale(125%);
     }
 
     100% {
-        transform: rotate(3050deg) scale(100%);
+        transform: rotate(2870deg) scale(100%);
     }
 }
 
@@ -98,7 +108,7 @@ body {
     color: white;
     padding: 15px;
     background-color: skyblue;
-    margin: 50px auto;
+    margin: 10px auto;
     display: inline-block;
     animation: bounce 1s 1;
 }
@@ -124,7 +134,7 @@ body {
     color: white;
     padding: 15px;
     background-color: orange;
-    margin: 50px auto;
+    margin: 10px auto;
     display: inline-block;
     transition: transform ease .5s;
 }
@@ -148,7 +158,7 @@ body {
     color: white;
     padding: 15px;
     background-color: orange;
-    margin: 50px auto;
+    margin: 10px auto;
     display: inline-block;
     transition: transform ease .5s;
 }
@@ -171,7 +181,7 @@ body {
     color: white;
     padding: 15px;
     background-color: orange;
-    margin: 50px auto;
+    margin: 10px auto;
     display: inline-block;
     transition: transform ease .5s;
 }
@@ -194,7 +204,7 @@ body {
     color: rgb(0, 26, 255);
     padding: 15px;
     background-color: rgb(255, 212, 253);
-    margin: 50px auto;
+    margin: 10px auto;
     display: inline-block;
     text-decoration: none;
     border-radius: 50px;
@@ -222,7 +232,7 @@ body {
     color: fuchsia;
     padding: 15px;
     background-color: olive;
-    margin: 50px auto;
+    margin: 10px auto;
     display: inline-block;
 
     transition: transform 1s;
