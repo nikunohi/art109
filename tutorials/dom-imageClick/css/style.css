@@ -47,6 +47,13 @@ p {
     margin-top: 20px;
 }
 
+h1 {
+    line-height: .75;
+}
+.scroll-warning {
+    padding: 15px;
+}
+
 .image-div {
     display: inline-block;
 
