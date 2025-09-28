@@ -305,7 +305,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 529) {
+@media screen and (max-width: 529px) {
     footer {
         text-align: center;
         padding: 10px;
