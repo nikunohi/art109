@@ -18,4 +18,4 @@ imageTwo.addEventListener("click", function () {
 
 imageThree.addEventListener("click", function () {
     alert("Fin.");
-})
+}) 
