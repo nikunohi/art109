@@ -88,11 +88,20 @@ const loader = new GLTFLoader(); // to load 3d models
 
 
 loader.load('./assets/low-poly_trash_can.glb', function (glb) {
+    const trash = glb.scene;
+    scene.add(trash);
+    trash.position.y = -2.5;
+    trash.scale.set(.5, .5, .5);
+})
+
+
+loader.load('./assets/pipespwease.glb', function (glb) {
     const pipe = glb.scene;
     scene.add(pipe);
     pipe.position.y = -2.5;
-    pipe.scale.set(.5, .5, .5);
+    pipe.scale.set(.15, .15, .15);
 })
+
 
 
 // ~~~~~~~~~~~~~~~~ Create scene here ~~~~~~~~~~~~~~~~
