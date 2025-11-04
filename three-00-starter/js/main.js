@@ -1,6 +1,7 @@
 // Basic Three.JS scene from documentation, importing Three.JS through a CDN 
 // https://threejs.org/docs/#manual/en/introduction/Creating-a-scene
 let scene, camera, renderer, cube, tetra;
+let sceneContainer = document.querySelector("#scene-container");
 
 //~~~~~~~Import Three.js (also linked to as import map in HTML)~~~~~~
 import * as THREE from 'three';
@@ -29,11 +30,17 @@ function init() {
     // scene.add(helper);
 
 
-    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera = new THREE.PerspectiveCamera(75, sceneContainer.clientWidth / sceneContainer.clientHeight, 0.1, 1000);
 
-    renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild(renderer.domElement);
+    renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setSize(sceneContainer.clientWidth, sceneContainer.clientHeight);
+    sceneContainer.appendChild(renderer.domElement);
+
+
+
+
+
+
 
     const geometry2 = new THREE.TetrahedronGeometry();
     const material2 = new THREE.MeshStandardMaterial({ color: 0x0000ff });
@@ -71,9 +78,9 @@ function animate() {
 }
 
 function onWindowResize() {
-    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.aspect = (sceneContainer.clientWidth / sceneContainer.clientHeight);
     camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(sceneContainer.clientWidth, sceneContainer.clientHeight);
 }
 
 window.addEventListener('resize', onWindowResize, false);
