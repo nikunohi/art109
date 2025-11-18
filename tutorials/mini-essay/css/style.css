@@ -1,0 +1,61 @@
+html {
+   box-sizing: border-box;
+   font-size: 62.5%;
+}
+
+
+*,
+*:before,
+*:after {
+   box-sizing: inherit;
+   margin: 0;
+   padding: 0;
+}
+
+
+html,
+body {
+   height: 100%;
+}
+
+
+body {
+   font-size: 1.6rem;
+   /* font-size 1.6rem is now the same as 16px */
+   line-height: 1.6;
+}
+
+.content-wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   ;
+}
+
+.body-type {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 75vh;
+   max-width: 50vw;
+}
+
+
+.body-type p {
+   font-size: 1.7rem;
+   line-height: 2.04rem;
+   font-family: "essential-pragmatapro", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+h1 {
+   font-family: "vdl-logog", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 2.5rem;
+   line-height: 3rem;
+   padding-bottom: 1.66rem;
+}
