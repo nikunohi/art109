@@ -24,6 +24,10 @@ body {
     /* font-size 1.6rem is now the same as 16px */
     line-height: 1.6;
 }
+a {
+    text-decoration: none;
+    color: aqua;
+}
 
 .content-wrapper {
     display: flex;
