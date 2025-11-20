@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="https://use.typekit.net/snb5zau.css">
     <link rel="stylesheet" href="https://use.typekit.net/snb5zau.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Github Copilot</title>
+    <title>dezziena.oc</title>
 </head>
 
 <body>
     <div class="content-wrapper">
         <section class="first-paragraph">
             <h1>So you're having trouble remembering your girlfriend's OCs...</h1>
-            <p>Fear not! Use an extra credit assignment in your web design class as an opportunity to learn about them,
+        </section>
+
+        <section class="body-type">
+            <p style="font-style: italic;">Fear not! Use an extra credit assignment in your web design class as an opportunity to learn about them,
                 hopefully for good!
             </p>
         </section>
@@ -42,8 +45,7 @@
 
 
         <section class="body-type">
-            <p>Fear not! Use an extra credit assignment in your web design class as an opportunity to learn about them,
-                hopefully for good!
+            <p>If you look closely at this one you can see the face of two more of her OCs in the background...
             </p>
         </section>
 
@@ -66,20 +68,36 @@
         <section class="image">
             <img src="assets/dezziena-angelo-640.jpg" alt="angelo, a dezziena oc">
         </section>
-        
 
 
-          <section class="body-type">
+
+        <section class="body-type">
             <p>Fear not! Use an extra credit assignment in your web design class as an opportunity to learn about them,
                 hopefully for good!
             </p>
         </section>
-
+        <footer>
+            <a href="https://www.instagram.com/dezziena/" target="_blank">learn more here!</a>
+        </footer>
     </div>
 
-    <footer>
-        <a href="https://www.instagram.com/dezziena/" target="_blank">learn more here!</a>
-    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    // Add .revealed when element is in view, remove when it leaves
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                    } else {
+                        entry.target.classList.remove('revealed');
+                    }
+                });
+            }, { threshold: 0.15 });
+
+            document.querySelectorAll('.first-paragraph, .image, .body-type').forEach(el => observer.observe(el));
+        });
+    </script>
 </body>
 
 </html>

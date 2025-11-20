@@ -39,7 +39,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 80vh;
+    min-height: 100vh;
     max-width: 50vw;
 }
 
@@ -52,6 +52,8 @@ body {
     text-align: center;
     min-height: auto;
     max-width: 50vw;
+    padding-bottom: 350px;
+    padding-top: 20px;
 }
 
 .image {
@@ -74,18 +76,79 @@ body {
     max-width: 100%;
 }
 
-.body-type, .first-paragraph p {
-    font-size: 1.7rem;
-    line-height: 2.04rem;
+.first-paragraph,
+.image,
+.body-type {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2000ms ease-in-out, transform 2000ms ease-in-out;
+    will-change: opacity, transform;
+}
+
+.first-paragraph.revealed,
+.image.revealed,
+.body-type.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.body-type p {
+    font-size: 1.75rem;
+    line-height: 2.1rem;
     font-family: "neue-haas-grotesk-display", sans-serif;
     font-weight: 500;
     font-style: normal;
+}
+
+
+.first-paragraph p {
+    font-size: 1.5rem;
+    line-height: 2.04rem;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    max-width: 40vw;
 }
 
 h1 {
     font-family: "source-serif-pro", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     line-height: 3.1rem;
+}
+
+@media (max-width: 640px) {
+
+    .body-type p {
+        font-size: 1.3rem;
+        line-height: 1.44rem;
+        font-family: "neue-haas-grotesk-display", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .first-paragraph p {
+        font-size: 1.3rem;
+        line-height: 1.44rem;
+        font-family: "neue-haas-grotesk-display", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+    }
+
+    .image {
+
+        max-width: 70vw;
+    }
+
+    .body-type {
+
+        max-width: 70vw;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+        line-height: 2.28rem;
+    }
+
 }
