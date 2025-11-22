@@ -150,7 +150,7 @@ h1 {
     }
 
     .body-type {
-
+        text-align-last: left;
         max-width: 70vw;
     }
 
