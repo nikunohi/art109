@@ -100,7 +100,7 @@ footer a {
    -webkit-hyphens: auto;
    -moz-hyphens: auto;
    min-height: auto;
-   max-width: 45vw;
+   max-width: 35vw;
    padding-bottom: 350px;
    padding-top: 20px;
 }
@@ -145,24 +145,21 @@ h1 {
 @media (max-width: 640px) {
 
    .body-type p {
-      font-size: 1.3rem;
-      line-height: 2rem;
+      font-size: 2rem;
+      line-height: 2.6rem;
       font-family: "lft-etica", sans-serif;
       font-weight: 300;
       font-style: normal;
    }
 
-   .first-paragraph p {
-      font-size: 1.3rem;
-      line-height: 1.56rem;
-      font-family: "lft-etica", sans-serif;
-      font-weight: 300;
-      font-style: italic;
+   .first-paragraph h1 {
+      font-size: 3.5rem;
+      line-height: 4.2rem;
    }
 
    .body-type {
       text-align-last: left;
-      max-width: 60vw;
+      max-width: 70vw;
    }
 
    .future-type {
@@ -170,8 +167,8 @@ h1 {
    }
 
    .future-type p {
-      font-size: 1.25rem;
-      line-height: 2.275rem;
+      font-size: 1.8rem;
+      line-height: 2.16rem;
    }
 
 
