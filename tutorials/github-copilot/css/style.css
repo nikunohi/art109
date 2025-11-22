@@ -26,7 +26,7 @@ body {
 }
 a {
     text-decoration: none;
-    color: aqua;
+    color: red;
 }
 
 .content-wrapper {
@@ -53,7 +53,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     min-height: auto;
     max-width: 50vw;
     padding-bottom: 350px;
@@ -98,7 +98,7 @@ a {
 
 .body-type p {
     font-size: 1.75rem;
-    line-height: 2.1rem;
+    line-height: 2.275rem;
     font-family: "neue-haas-grotesk-display", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -134,7 +134,7 @@ h1 {
 
     .first-paragraph p {
         font-size: 1.3rem;
-        line-height: 1.44rem;
+        line-height: 1.56rem;
         font-family: "neue-haas-grotesk-display", sans-serif;
         font-weight: 500;
         font-style: italic;
